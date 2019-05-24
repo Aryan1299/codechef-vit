@@ -107,11 +107,16 @@ input, select, textarea {
 		letter-spacing: 0.025em;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		font-size: 30px;
+	h1, h2, h4, h5, h6 {
+		font-size: 18px;
 		font-weight: 700;
 		color: #484d55;
 	}
+	h3 {
+		font-size: 30px;
+		font-weight: 700;
+		color: #484d55;
+}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
