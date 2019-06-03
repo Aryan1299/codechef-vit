@@ -4,32 +4,18 @@
   <head>
     <title>Contact Us</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-
+    
     <link rel="icon" type="image/jpg" href="title.jpg" />
     <style>
       #doneDialog {
-        margin-top: 100;
+        
+        position: relative;
+		padding: 6em 1em 7em 1em;
       }
     </style>
   </head>
@@ -66,8 +52,10 @@
       </section>
 
       <!-- Main -->
-      <h3 class="h3" style="visibility:hidden" id="doneDialog">
-        Thank You ! <i class="fab fa-angellist"></i>
+      
+      <h3 class="h3" style="display:none" id="doneDialog"><center>
+        <img src="images/CC_black.png" width=200 height="auto"><br><br>
+        Thank You for subscribing! You will receive an E-mail shortly.</center>
       </h3>
       <div id="fullForm">
         <div id="main" class="wrapper style2">
@@ -76,71 +64,30 @@
             <center>
               <div class="contact">
                 <form id="contact-form">
-                  <h3 class="h3">
-                    Subscribe to our Newsletter! <i class="far fa-smile"></i
-                    ><br />
-                  </h3>
-                  <br /><br />
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Name"
-                    required
-                  /><br />
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    class="form-control"
-                    placeholder="Your Email"
-                    required
-                  /><br />
-                  <input
-                    id="but"
-                    type="submit"
-                    class="form-control submit"
-                    value="SUBSCRIBE"
-                  />
+                  <h3 class="h3">Subscribe to our Newsletter! </h3><br /><br />
+                  <input id="name" name="name" type="text" class="form-control" placeholder="Your Name" required /><br />
+                  <input id="email" name="email" type="email" class="form-control" placeholder="Your Email" required /><br /><br>
+                  
+                  <input id="but" type="submit" class="form-control submit" value="SUBSCRIBE" />
                 </form>
               </div>
             </center>
           </div>
         </div>
       </div>
-    </div>
+    
 
     <!--Footer-->
     <div class="footer" style="background-image: url('images/banner.jpg');">
       <div class="left">
-        <h1
-          style="text-transform:uppercase;font-size:100%;letter-spacing:2px;color:#bbb"
-        >
-          Get in Touch with us!
-        </h1>
-        <br />
-        <i class="fa fa-phone"></i>&nbsp&nbsp&nbsp&nbspCall Us: +91
-        8285025348<br />
-        <i class="fa fa-envelope" style="text-decoration: none;"></i
-        >&nbsp&nbsp&nbsp&nbspEmail Us:
-        <a href="mailto:codechef@vit.ac.in">codechef@vit.ac.in</a>
+        <h1 style="text-transform:uppercase;font-size:100%;letter-spacing:2px;color:#bbb">Get in Touch with us!</h1><br />
+        <i class="fa fa-phone"></i>&nbsp&nbsp&nbsp&nbspCall Us: +91 8285025348<br />
+        <i class="fa fa-envelope" style="text-decoration: none;"></i>&nbsp&nbsp&nbsp&nbspEmail Us:<a href="mailto:codechef@vit.ac.in">codechef@vit.ac.in</a>
       </div>
       <div class="right">
-        <h1
-          style="text-transform:uppercase;font-size:100%;letter-spacing:2px;color:#bbb"
-        >
-          Find us on Social media
-        </h1>
-        <br />
-        <a
-          href="https://www.facebook.com/codechefvituniversity/"
-          target="_blank"
-          ><i class="fa fa-facebook-square" style="font-size:50px;"></i></a
-        >&nbsp&nbsp&nbsp
-        <a href="https://www.instagram.com/codechefvit/" target="_blank"
-          ><i class="fa fa-instagram" style="font-size:50px;"></i
-        ></a>
+        <h1 style="text-transform:uppercase;font-size:100%;letter-spacing:2px;color:#bbb">Find us on Social media</h1><br>
+							<a href="https://www.facebook.com/codechefvituniversity/" target="_blank"><i class="fa fa-facebook-square" style="font-size:50px;"></i></a>&nbsp&nbsp&nbsp
+							<a href="https://www.instagram.com/codechefvit/" target="_blank"><i class="fa fa-instagram" style="font-size:50px;"></i></a>
       </div>
     </div>
 
@@ -161,14 +108,14 @@
       $("#name").on("focusout", e => {
         if (e.target.value === "")
           $("#name")
-            .css({ border: "2px solid red", backgroundColor: "#ff8b89" })
+            .css({ border: "1px solid red", backgroundColor: "#fff" })
             .attr("placeholder", "Required");
         else $("#name").css({ backgroundColor: "white", border: "none" });
       });
       $("#email").on("focusout", e => {
         if (e.target.value === "" || !emailValid(e.target.value))
           $("#email")
-            .css({ border: "2px solid red", backgroundColor: "#ff8b89" })
+            .css({ border: "1px solid red", backgroundColor: "#fff" })
             .attr("placeholder", "Incorrect");
         else $("#email").css({ border: "none", backgroundColor: "white" });
       });
