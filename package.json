@@ -1,0 +1,25 @@
+{
+  "name": "codechef-vit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryan1299/codechef-vit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aryan1299/codechef-vit/issues"
+  },
+  "homepage": "https://github.com/Aryan1299/codechef-vit#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "8.11.4"
+  }
+}
