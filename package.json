@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/Aryan1299/codechef-vit#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "hbs": "^4.1.0",
+    "request": "^2.88.0"
   },
   "engines": {
     "node": "8.11.4"
