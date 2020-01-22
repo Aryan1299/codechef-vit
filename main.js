@@ -1,7 +1,6 @@
 var express = require('express')
 var app = express()
 var path = require('path')
-var session = require('express-session')
 const request = require('request')
 var port = process.env.PORT || 3000
 
