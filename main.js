@@ -14,6 +14,12 @@ app.get('/', (req, res) => {
   })
 })
 
+app.get('/index', (req, res) => {
+  res.render('index', {
+    message: ""
+  })
+})
+
 app.get('/2015', function (req, res) {
   res.render('2015', {
     message: ""
